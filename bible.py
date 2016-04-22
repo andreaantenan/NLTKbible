@@ -34,7 +34,8 @@ search_text=nltk.Text(search_text.words())
 
 #
 from nltk.corpus import stopwords
-stopwords=nltk.corpus.stopwords.words('english_copy')
+## path is andreaantenan/Desktop/cs195/nltk_data/corpora/stopwords/english.txt
+stopwords=nltk.corpus.stopwords.words('bible.txt')
 
 search_text= [word for word in search_text if word.lower() not in stopwords]
 
